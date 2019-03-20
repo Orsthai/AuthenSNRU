@@ -18,50 +18,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="SOb-zP-haq">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="SOb-zP-haq">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z1p-zu-WzM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z1p-zu-WzM">
                                 <rect key="frame" x="117" y="119" width="180" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="PfA-zP-Fof"/>
+                                    <constraint firstAttribute="height" constant="180" id="qO0-Pe-bia"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Authen SNRU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQA-Pn-jxL">
-                                <rect key="frame" x="81" y="321" width="253" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authen SNRU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQA-Pn-jxL">
+                                <rect key="frame" x="80.5" y="321" width="253" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="253" id="8DK-zY-7kp"/>
+                                    <constraint firstAttribute="height" constant="49" id="tdb-31-Tbr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azm-5c-EBi">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="azm-5c-EBi">
                                 <rect key="frame" x="94" y="386" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="05l-0U-nV7"/>
+                                    <constraint firstAttribute="height" constant="30" id="q2d-Ld-ANx"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-kd-THr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-kd-THr">
                                 <rect key="frame" x="94" y="438" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="52h-Rk-R09"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="DPk-ay-r3T"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6i-BN-Ip8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6i-BN-Ip8">
                                 <rect key="frame" x="94" y="490" width="226" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="NNq-Fg-lUQ"/>
+                                    <constraint firstAttribute="height" constant="35" id="yWy-uj-Pgz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-nE-vkn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-nE-vkn">
                                 <rect key="frame" x="94" y="544" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jyd-YM-gVW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="h6q-w0-UC9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="New Register">
@@ -71,6 +88,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SOb-zP-haq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0M8-Wf-faG"/>
+                            <constraint firstItem="SOb-zP-haq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0aJ-W8-J2x"/>
+                            <constraint firstItem="EQA-Pn-jxL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Uh-xY-QGR"/>
+                            <constraint firstItem="Z1p-zu-WzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Vc-X7-F8j"/>
+                            <constraint firstItem="Zek-nE-vkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7qN-Za-pQA"/>
+                            <constraint firstItem="azm-5c-EBi" firstAttribute="top" secondItem="EQA-Pn-jxL" secondAttribute="bottom" constant="16" id="7qR-GB-Nla"/>
+                            <constraint firstItem="N6i-BN-Ip8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AIZ-hV-tvw"/>
+                            <constraint firstItem="EQA-Pn-jxL" firstAttribute="top" secondItem="Z1p-zu-WzM" secondAttribute="bottom" constant="22" id="Bh1-az-H7Z"/>
+                            <constraint firstItem="SOb-zP-haq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HqG-fg-DYK"/>
+                            <constraint firstItem="azm-5c-EBi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HrB-Py-NM1"/>
+                            <constraint firstItem="sUa-kd-THr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THp-o6-Zuq"/>
+                            <constraint firstItem="Z1p-zu-WzM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="VTD-5R-dss"/>
+                            <constraint firstItem="sUa-kd-THr" firstAttribute="top" secondItem="azm-5c-EBi" secondAttribute="bottom" constant="22" id="WWM-GF-dMN"/>
+                            <constraint firstItem="SOb-zP-haq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jR9-Vi-LeZ"/>
+                            <constraint firstItem="N6i-BN-Ip8" firstAttribute="top" secondItem="sUa-kd-THr" secondAttribute="bottom" constant="22" id="jXp-4D-8mS"/>
+                            <constraint firstItem="Zek-nE-vkn" firstAttribute="top" secondItem="N6i-BN-Ip8" secondAttribute="bottom" constant="19" id="rAe-ck-1Cu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
