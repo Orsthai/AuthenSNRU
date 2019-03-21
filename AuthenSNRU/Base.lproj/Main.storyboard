@@ -127,41 +127,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3c-u0-i7S">
-                                <rect key="frame" x="82.5" y="180" width="249" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Gfl-UU-aYq"/>
-                                    <constraint firstAttribute="width" constant="249" id="VgU-fV-udy"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCN-sh-Kng">
-                                <rect key="frame" x="82.5" y="218" width="249" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="249" id="JUj-3s-wSI"/>
-                                    <constraint firstAttribute="height" constant="30" id="ogB-CV-ru9"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsC-tZ-Bgy">
-                                <rect key="frame" x="82.5" y="256" width="249" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="249" id="Qxe-yZ-soJ"/>
-                                    <constraint firstAttribute="height" constant="30" id="eO3-b6-B9M"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xp2-2x-bAz">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xp2-2x-bAz">
                                 <rect key="frame" x="0.0" y="44" width="414" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Register" id="qAG-6M-Gdo">
@@ -180,28 +148,36 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-S4-k8v">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="znJ-S4-k8v">
                                 <rect key="frame" x="0.0" y="83" width="414" height="730"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3c-u0-i7S">
+                                <rect key="frame" x="82" y="180" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCN-sh-Kng">
+                                <rect key="frame" x="82" y="218" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsC-tZ-Bgy">
+                                <rect key="frame" x="82" y="256" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Y3c-u0-i7S" firstAttribute="centerX" secondItem="wo9-Yo-lr1" secondAttribute="centerX" id="1AZ-pm-gca"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="centerX" secondItem="wo9-Yo-lr1" secondAttribute="centerX" id="3Vc-6y-Uy5"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="centerY" secondItem="wo9-Yo-lr1" secondAttribute="centerY" id="6LT-6Y-ERc"/>
-                            <constraint firstItem="Xp2-2x-bAz" firstAttribute="trailing" secondItem="HcZ-7y-C2W" secondAttribute="trailing" id="86j-u5-yj6"/>
-                            <constraint firstItem="Xp2-2x-bAz" firstAttribute="leading" secondItem="HcZ-7y-C2W" secondAttribute="leading" id="AZm-Sy-oZq"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="bottom" secondItem="HcZ-7y-C2W" secondAttribute="bottom" id="JIG-os-xRK"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="leading" secondItem="HcZ-7y-C2W" secondAttribute="leading" id="Sp7-vY-ara"/>
-                            <constraint firstItem="WsC-tZ-Bgy" firstAttribute="centerX" secondItem="wo9-Yo-lr1" secondAttribute="centerX" id="UoV-dp-PhO"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="trailing" secondItem="HcZ-7y-C2W" secondAttribute="trailing" id="ccL-YD-f1B"/>
-                            <constraint firstItem="Xp2-2x-bAz" firstAttribute="top" secondItem="HcZ-7y-C2W" secondAttribute="top" id="g7J-hc-80o"/>
-                            <constraint firstItem="WsC-tZ-Bgy" firstAttribute="top" secondItem="KCN-sh-Kng" secondAttribute="bottom" constant="8" id="hBO-eq-bCS"/>
-                            <constraint firstItem="Y3c-u0-i7S" firstAttribute="top" secondItem="Xp2-2x-bAz" secondAttribute="bottom" constant="97" id="nzd-Wb-9tV"/>
-                            <constraint firstItem="znJ-S4-k8v" firstAttribute="top" secondItem="Xp2-2x-bAz" secondAttribute="bottom" id="pTX-cO-xZr"/>
-                            <constraint firstItem="KCN-sh-Kng" firstAttribute="centerX" secondItem="wo9-Yo-lr1" secondAttribute="centerX" id="yLi-HZ-wrM"/>
-                            <constraint firstItem="KCN-sh-Kng" firstAttribute="top" secondItem="Y3c-u0-i7S" secondAttribute="bottom" constant="8" id="ybe-cc-h42"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HcZ-7y-C2W"/>
                     </view>
                     <toolbarItems/>
